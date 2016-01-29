@@ -11,6 +11,7 @@ namespace SimpleListApp
         static void Main(string[] args)
         {
             MyArrayList list = new MyArrayList();
+
             list.Add(5);
             list.Add(1);
             list.Add(2);
