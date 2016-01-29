@@ -28,6 +28,8 @@ namespace SimpleListApp
             list.Add(49);
             list.Add(40);
 
+            list.Clear(2);
+
             Console.WriteLine(list.Count);
         }
     }

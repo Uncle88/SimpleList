@@ -94,9 +94,9 @@ namespace SimpleListApp
 
         }
 
-        public void Clear()
+        public void Clear(int index)
         {
-            throw new NotImplementedException();
+            myMass[index] = null;
         }
 
         public bool Contains(object value)
