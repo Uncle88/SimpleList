@@ -9,7 +9,7 @@ namespace SimpleListApp
     class MyArrayList : IList
     {
         int index;
-        double size = 2;
+        const  double size = 2;
         double pov = 2;
         int currentValue;
 
@@ -94,9 +94,11 @@ namespace SimpleListApp
 
         }
 
-        public void Clear(int index)
+        public void Clear()
         {
-            myMass[index] = null;
+            pov = 2;
+            currentValue = (int)Math.Pow(size, pov);
+            myMass = new object[currentValue];
         }
 
         public bool Contains(object value)
