@@ -41,6 +41,7 @@ namespace SimpleListApp
             get
             {
                 return myMass.Length;
+                //hello from Alex' computer
             }
         }
 
@@ -141,6 +142,9 @@ namespace SimpleListApp
             throw new NotImplementedException();
         }
 
-       
+        public void CopyTo (Array array, int index)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
