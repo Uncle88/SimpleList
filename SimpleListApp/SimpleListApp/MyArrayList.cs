@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,7 +10,7 @@ namespace SimpleListApp
     class MyArrayList : IList
     {
         int index;
-        const  double size = 2;
+        const double size = 2;
         double pov = 2;
         int currentValue;
 
@@ -93,12 +94,11 @@ namespace SimpleListApp
             }
 
             return index;
-
         }
 
         public void Clear()
         {
-            pov = 2;
+            pov=2;
             currentValue = (int)Math.Pow(size, pov);
             myMass = new object[currentValue];
         }
@@ -108,9 +108,14 @@ namespace SimpleListApp
             throw new NotImplementedException();
         }
 
-        public void CopyTo(Array array, int index)
+        public void CopyTo(Array array)
         {
-            throw new NotImplementedException();
+            object[] Array = new object[currentValue];
+            for (int i = 0; i < index; i++)
+            {
+                Array[i] = myMass[i];
+            }
+
         }
 
         public IEnumerator GetEnumerator()
@@ -134,6 +139,11 @@ namespace SimpleListApp
         }
 
         public void RemoveAt(int index)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void CopyTo (Array array, int index)
         {
             throw new NotImplementedException();
         }

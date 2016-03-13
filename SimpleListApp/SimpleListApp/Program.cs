@@ -31,6 +31,7 @@ namespace SimpleListApp
             list.Clear();
 
             Console.WriteLine(list.Count);
+            Console.ReadLine();
         }
     }
 }
