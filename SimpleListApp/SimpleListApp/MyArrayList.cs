@@ -40,6 +40,7 @@ namespace SimpleListApp
             get
             {
                 return myMass.Length;
+                //hello from Alex' computer
             }
         }
 
