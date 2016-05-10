@@ -10,12 +10,15 @@ namespace SimpleListApp
     class MyArrayList : IList
     {
         int index;
+<<<<<<< HEAD
         const double size = 2;
+=======
+        const  double size = 2;
+>>>>>>> 1665d406c0ae18a8821e054fd4da612555fae116
         double pov = 2;
         int currentValue;
 
         object[] myMass;
-       
 
         public MyArrayList()
         {
@@ -43,7 +46,6 @@ namespace SimpleListApp
             {
                 return myMass.Length;
                 //hello from Alex' computer
-                //Second hello from Alex
             }
         }
 
@@ -99,24 +101,18 @@ namespace SimpleListApp
 
         public void Clear()
         {
+<<<<<<< HEAD
             pov=2;
+=======
+            pov = 2;
+>>>>>>> 1665d406c0ae18a8821e054fd4da612555fae116
             currentValue = (int)Math.Pow(size, pov);
             myMass = new object[currentValue];
         }
 
-        public bool Contains (object value)
+        public bool Contains(object value)
         {
-            object a =Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                object s = myMass[i];
-                if (a == s)
-                {
-                    return true;
-                }
-                else
-                    return false;
-            }
+            throw new NotImplementedException();
         }
 
         public void CopyTo(Array array)
@@ -136,14 +132,7 @@ namespace SimpleListApp
 
         public int IndexOf(object value)
         {
-            object a = Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                if (a == myMass[i])
-                {
-                    return i;
-                }
-            }
+            throw new NotImplementedException();
         }
 
         public void Insert(int index, object value)
@@ -161,9 +150,6 @@ namespace SimpleListApp
             throw new NotImplementedException();
         }
 
-        public void CopyTo (Array array, int index)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

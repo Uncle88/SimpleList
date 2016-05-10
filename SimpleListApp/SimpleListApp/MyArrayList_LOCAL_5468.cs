@@ -15,7 +15,6 @@ namespace SimpleListApp
         int currentValue;
 
         object[] myMass;
-       
 
         public MyArrayList()
         {
@@ -42,8 +41,6 @@ namespace SimpleListApp
             get
             {
                 return myMass.Length;
-                //hello from Alex' computer
-                //Second hello from Alex
             }
         }
 
@@ -104,19 +101,9 @@ namespace SimpleListApp
             myMass = new object[currentValue];
         }
 
-        public bool Contains (object value)
+        public bool Contains(object value)
         {
-            object a =Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                object s = myMass[i];
-                if (a == s)
-                {
-                    return true;
-                }
-                else
-                    return false;
-            }
+            throw new NotImplementedException();
         }
 
         public void CopyTo(Array array)
@@ -136,14 +123,7 @@ namespace SimpleListApp
 
         public int IndexOf(object value)
         {
-            object a = Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                if (a == myMass[i])
-                {
-                    return i;
-                }
-            }
+            throw new NotImplementedException();
         }
 
         public void Insert(int index, object value)
@@ -161,9 +141,6 @@ namespace SimpleListApp
             throw new NotImplementedException();
         }
 
-        public void CopyTo (Array array, int index)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

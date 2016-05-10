@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,12 +9,11 @@ namespace SimpleListApp
     class MyArrayList : IList
     {
         int index;
-        const double size = 2;
+        double size = 2;
         double pov = 2;
         int currentValue;
 
         object[] myMass;
-       
 
         public MyArrayList()
         {
@@ -42,8 +40,6 @@ namespace SimpleListApp
             get
             {
                 return myMass.Length;
-                //hello from Alex' computer
-                //Second hello from Alex
             }
         }
 
@@ -95,38 +91,22 @@ namespace SimpleListApp
             }
 
             return index;
+
         }
 
-        public void Clear()
+        public void Clear(int index)
         {
-            pov=2;
-            currentValue = (int)Math.Pow(size, pov);
-            myMass = new object[currentValue];
+            myMass[index] = null;
         }
 
-        public bool Contains (object value)
+        public bool Contains(object value)
         {
-            object a =Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                object s = myMass[i];
-                if (a == s)
-                {
-                    return true;
-                }
-                else
-                    return false;
-            }
+            throw new NotImplementedException();
         }
 
-        public void CopyTo(Array array)
+        public void CopyTo(Array array, int index)
         {
-            object[] Array = new object[currentValue];
-            for (int i = 0; i < index; i++)
-            {
-                Array[i] = myMass[i];
-            }
-
+            throw new NotImplementedException();
         }
 
         public IEnumerator GetEnumerator()
@@ -136,14 +116,7 @@ namespace SimpleListApp
 
         public int IndexOf(object value)
         {
-            object a = Console.ReadLine();
-            for (int i = 0; i < currentValue; i++)
-            {
-                if (a == myMass[i])
-                {
-                    return i;
-                }
-            }
+            throw new NotImplementedException();
         }
 
         public void Insert(int index, object value)
@@ -157,11 +130,6 @@ namespace SimpleListApp
         }
 
         public void RemoveAt(int index)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void CopyTo (Array array, int index)
         {
             throw new NotImplementedException();
         }

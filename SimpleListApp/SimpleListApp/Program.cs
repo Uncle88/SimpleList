@@ -30,6 +30,9 @@ namespace SimpleListApp
 
             list.Clear();
 
+            
+            Console.WriteLine(list.Contains(5));
+
             Console.WriteLine(list.Count);
             Console.ReadLine();
         }
