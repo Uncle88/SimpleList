@@ -167,7 +167,7 @@ namespace SimpleListApp
 
         public void Remove(object value)
         {
-            throw new NotImplementedException();
+            RemoveAt(IndexOf(value));
         }
 
         public void RemoveAt(int index)
