@@ -172,7 +172,14 @@ namespace SimpleListApp
 
         public void RemoveAt(int index)
         {
-            throw new NotImplementedException();
+            if ((index >= 0) && (index < Count))
+            {
+                for (int i = index; i < Count - 1; i++)
+                {
+                    myMass[i] = myMass[i + 1];
+                }
+                currentValue--;
+            }
         }
 
         public void CopyTo (Array array, int index)
