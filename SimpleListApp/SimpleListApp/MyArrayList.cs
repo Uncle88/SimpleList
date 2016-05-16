@@ -44,6 +44,7 @@ namespace SimpleListApp
                 return myMass.Length;
                 //hello from Alex' computer
                 //Second hello from Alex
+                //What the @hello from Alex' computer@ & second????
             }
         }
 
@@ -106,7 +107,7 @@ namespace SimpleListApp
 
         public bool Contains (object value)
         {
-            object a =Console.ReadLine();
+            object a= null;
             for (int i = 0; i < currentValue; i++)
             {
                 object s = myMass[i];
@@ -117,6 +118,7 @@ namespace SimpleListApp
                 else
                     return false;
             }
+            return false;
         }
 
         public void CopyTo(Array array)
@@ -136,7 +138,7 @@ namespace SimpleListApp
 
         public int IndexOf(object value)
         {
-            object a = Console.ReadLine();
+            object a = null;
             for (int i = 0; i < currentValue; i++)
             {
                 if (a == myMass[i])
@@ -144,11 +146,23 @@ namespace SimpleListApp
                     return i;
                 }
             }
+            return -1;
         }
 
         public void Insert(int index, object value)
         {
-            throw new NotImplementedException();
+            {
+                if ((currentValue + 1 <= myMass.Length) && (index < Count) && (index >= 0))
+                {
+                    currentValue++;
+
+                    for (int i = Count - 1; i > index; i--)
+                    {
+                        myMass[i] = myMass[i - 1];
+                    }
+                    myMass[index] = value;
+                }
+            }
         }
 
         public void Remove(object value)
