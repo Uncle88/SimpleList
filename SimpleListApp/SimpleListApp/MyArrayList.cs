@@ -133,7 +133,7 @@ namespace SimpleListApp
 
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
+            return (IEnumerator)GetEnumerator();
         }
 
         public int IndexOf(object value)
@@ -184,7 +184,12 @@ namespace SimpleListApp
 
         public void CopyTo (Array array, int index)
         {
-            throw new NotImplementedException();
+            int j = index;
+            for (int i = 0; i < Count; i++)
+            {
+                array.SetValue(myMass[i], j);
+                j++;
+            }
         }
     }
 }
