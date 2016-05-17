@@ -184,6 +184,7 @@ namespace SimpleListApp
 
         public void CopyTo (Array array, int index)
         {
+
             int j = index;
             for (int i = 0; i < Count; i++)
             {
