@@ -28,12 +28,12 @@ namespace SimpleListApp
         {
             get
             {
-                throw new NotImplementedException();
+                return myMass[index];
             }
 
             set
             {
-                throw new NotImplementedException();
+                myMass[index] = value;
             }
         }
 
