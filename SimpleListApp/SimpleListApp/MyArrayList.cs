@@ -57,7 +57,7 @@ namespace SimpleListApp
         {
             get
             {
-                throw new NotImplementedException();
+                return false;
             }
         }
 
