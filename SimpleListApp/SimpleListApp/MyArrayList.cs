@@ -65,7 +65,7 @@ namespace SimpleListApp
         {
             get
             {
-                return false;
+                return true;
             }
         }
 
@@ -73,7 +73,14 @@ namespace SimpleListApp
         {
             get
             {
-                throw new NotImplementedException();
+                lock (myMass.SyncRoot)
+                {
+                    foreach (Object item in myMass)
+                    {
+                        return item;
+                    }
+                }
+                return myMass;
             }
         }
 
