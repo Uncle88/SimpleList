@@ -42,9 +42,6 @@ namespace SimpleListApp
             get
             {
                 return myMass.Length;
-                //hello from Alex' computer
-                //Second hello from Alex
-                //What the @hello from Alex' computer@ & second????
             }
         }
 
@@ -52,7 +49,7 @@ namespace SimpleListApp
         {
             get
             {
-                throw new NotImplementedException();
+                return true;
             }
         }
 
