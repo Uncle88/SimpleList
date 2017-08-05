@@ -15,7 +15,7 @@ namespace SimpleListApp
         int currentValue;
 
         object[] myMass;
-       
+
 
         public MyArrayList()
         {
@@ -104,23 +104,19 @@ namespace SimpleListApp
 
         public void Clear()
         {
-            pov=2;
+            pov = 2;
             currentValue = (int)Math.Pow(size, pov);
             myMass = new object[currentValue];
         }
 
-        public bool Contains (object value)
+        public bool Contains(object value)
         {
-            object a= null;
+            object a = null;
             for (int i = 0; i < currentValue; i++)
             {
                 object s = myMass[i];
                 if (a == s)
-                {
                     return true;
-                }
-                else
-                    return false;
             }
             return false;
         }
@@ -186,7 +182,7 @@ namespace SimpleListApp
             }
         }
 
-        public void CopyTo (Array array, int index)
+        public void CopyTo(Array array, int index)
         {
             int j = index;
             for (int i = 0; i < Count; i++)
